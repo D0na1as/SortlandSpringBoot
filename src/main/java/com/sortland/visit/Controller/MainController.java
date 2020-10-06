@@ -22,7 +22,6 @@ public class MainController {
 
     @PostMapping("/create")
     public String create(@ModelAttribute Message message, Model model)  {
-        System.out.println("Hi");
         itemService.addItem(message);
         return "redirect:/#Contact";
 
